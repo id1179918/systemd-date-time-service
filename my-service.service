@@ -1,0 +1,14 @@
+[Unit]
+Description=Date and Time demo service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=<YOUR_USER>
+ExecStart=<path/to/python>  <path/to/date_time_test.py>
+
+
+[Install]
+WantedBy=multi-user.target
